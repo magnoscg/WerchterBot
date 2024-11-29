@@ -174,7 +174,7 @@ class TelegramMonitor:
                     last_state = current_state
                 
                 # Enviar reporte cada 12 verificaciones
-                if check_count % 12 == 0:
+                if check_count % 1008 == 0:
                     cambios = "Ha habido cambios" if last_state != current_state else "NO ha habido cambios"
                     estado_actual = "La caseta de perro esta lista" if not current_state else "Hay que ir pensando en sacos de dormir."
                     
